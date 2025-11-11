@@ -477,7 +477,7 @@ class OAIWanwurongtu:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -669,7 +669,7 @@ class OAIZhengJianZhao:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -874,7 +874,7 @@ class OAIRenwuchangjingronghe:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -1100,7 +1100,7 @@ class OAIZitaiqianyi:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -1321,7 +1321,7 @@ class OAIQianzibaitai:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -1534,7 +1534,7 @@ class OAIQwenEdit:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -1770,7 +1770,7 @@ class OAIFantuichutu:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -1990,7 +1990,7 @@ class OAIXiangaochengtu:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -2191,7 +2191,7 @@ class OAIChongdaguang:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -2383,7 +2383,7 @@ class OAIZhenrenshouban:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -2582,7 +2582,7 @@ class OAIQushuiyin:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -2783,7 +2783,7 @@ class OAILaozhaopian:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -2975,7 +2975,7 @@ class OAIDianshang:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -3205,7 +3205,7 @@ class OAIFlux:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -3443,7 +3443,7 @@ class OAIKeling:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -3689,7 +3689,7 @@ class OAIJipuli:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -3881,7 +3881,7 @@ class OAIChanpin:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -4079,7 +4079,7 @@ class OAIGaoqing:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -4271,7 +4271,7 @@ class OAIMaopei:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -4476,7 +4476,7 @@ class OAIWanwuqianyi:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -4681,7 +4681,7 @@ class OAIKuotu:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -4901,7 +4901,7 @@ class OAIKoutu:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -5093,7 +5093,7 @@ class OAIJianzhi:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -5285,7 +5285,7 @@ class OAIShangse:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -5502,7 +5502,7 @@ class OAIHuanyi:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -5917,7 +5917,7 @@ class OAISora2:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -6133,7 +6133,7 @@ class OAIDongzuoqianyi:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -6474,7 +6474,7 @@ class OAIShuziren:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -6765,7 +6765,7 @@ class OAITihuanrenwu:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -6956,7 +6956,7 @@ class OAIShouweizhen:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -7145,7 +7145,7 @@ class OAITushengshipin:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -7327,7 +7327,7 @@ class OAIYinpinqudong:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -7776,7 +7776,7 @@ class OAIJimengshipin:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -7979,7 +7979,7 @@ class OAIDoubao40:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
@@ -8207,7 +8207,7 @@ class OAIWanwuhuanbeijing:
     def __init__(self):
         self.api_url = "https://oaigc.cn/api/v1/task/submit"
         self.query_url = "https://oaigc.cn/api/v1/task/query"
-        self.upload_url = "https://oaigc.cn/api/file/tool/upload"
+        self.upload_url = "https://oaigc.cn/api/file/tool/uploadNodeFile"
         
     @classmethod
     def INPUT_TYPES(cls):
