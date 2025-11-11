@@ -5959,8 +5959,8 @@ class OAISora2:
             }
         }
     
-    RETURN_TYPES = ("IMAGE", "INT", "STRING")
-    RETURN_NAMES = ("frames", "frame_count", "video_info")
+    RETURN_TYPES = ("IMAGE", "INT", "STRING", "AUDIO")
+    RETURN_NAMES = ("frames", "frame_count", "video_info", "audio")
     FUNCTION = "generate_video"
     CATEGORY = "OAI"
     
@@ -6161,8 +6161,8 @@ class OAIDongzuoqianyi:
             }
         }
     
-    RETURN_TYPES = ("IMAGE", "INT", "STRING")
-    RETURN_NAMES = ("frames", "frame_count", "video_info")
+    RETURN_TYPES = ("IMAGE", "INT", "STRING", "AUDIO")
+    RETURN_NAMES = ("frames", "frame_count", "video_info", "audio")
     FUNCTION = "transfer_motion"
     CATEGORY = "OAI"
     
@@ -6355,8 +6355,8 @@ class OAIDuikouxing:
             }
         }
     
-    RETURN_TYPES = ("IMAGE", "INT", "STRING")
-    RETURN_NAMES = ("frames", "frame_count", "video_info")
+    RETURN_TYPES = ("IMAGE", "INT", "STRING", "AUDIO")
+    RETURN_NAMES = ("frames", "frame_count", "video_info", "audio")
     FUNCTION = "lip_sync"
     CATEGORY = "OAI"
     
@@ -6793,8 +6793,8 @@ class OAITihuanrenwu:
             }
         }
     
-    RETURN_TYPES = ("IMAGE", "INT", "STRING")
-    RETURN_NAMES = ("frames", "frame_count", "video_info")
+    RETURN_TYPES = ("IMAGE", "INT", "STRING", "AUDIO")
+    RETURN_NAMES = ("frames", "frame_count", "video_info", "audio")
     FUNCTION = "replace_person"
     CATEGORY = "OAI"
     
@@ -7654,8 +7654,8 @@ class OAIDuocanshipin:
             }
         }
     
-    RETURN_TYPES = ("IMAGE", "INT", "STRING")
-    RETURN_NAMES = ("frames", "frame_count", "video_info")
+    RETURN_TYPES = ("IMAGE", "INT", "STRING", "AUDIO")
+    RETURN_NAMES = ("frames", "frame_count", "video_info", "audio")
     FUNCTION = "generate_video"
     CATEGORY = "OAI"
     
@@ -7807,8 +7807,8 @@ class OAIJimengshipin:
             }
         }
     
-    RETURN_TYPES = ("IMAGE", "INT", "STRING")
-    RETURN_NAMES = ("frames", "frame_count", "video_info")
+    RETURN_TYPES = ("IMAGE", "INT", "STRING", "AUDIO")
+    RETURN_NAMES = ("frames", "frame_count", "video_info", "audio")
     FUNCTION = "generate_video"
     CATEGORY = "OAI"
     
