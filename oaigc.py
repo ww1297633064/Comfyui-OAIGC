@@ -137,6 +137,11 @@ class OAIQwenTextToImage:
                 "ai_expansion": ("BOOLEAN", {
                     "default": False
                 }),
+                "seed": ("INT", {
+                    "default": 0,
+                    "min": 0,
+                    "max": 0xffffffffffffffff
+                }),
             }
         }
     
@@ -145,7 +150,7 @@ class OAIQwenTextToImage:
     FUNCTION = "generate_image"
     CATEGORY = "OAI"
     
-    def generate_image(self, api_key, prompt, aspect_ratio, batch_size, ai_expansion):
+    def generate_image(self, api_key, prompt, aspect_ratio, batch_size, ai_expansion, seed):
         """生成图像"""
         
         if not api_key or not api_key.strip():
@@ -324,6 +329,11 @@ class OAIJimengTextToImage:
                 "use_pre_llm": ("BOOLEAN", {
                     "default": True
                 }),
+                "seed": ("INT", {
+                    "default": 0,
+                    "min": 0,
+                    "max": 0xffffffffffffffff
+                }),
             }
         }
     
@@ -332,7 +342,7 @@ class OAIJimengTextToImage:
     FUNCTION = "generate_image"
     CATEGORY = "OAI"
     
-    def generate_image(self, api_key, prompt, aspect_ratio, use_pre_llm):
+    def generate_image(self, api_key, prompt, aspect_ratio, use_pre_llm, seed):
         """生成图像"""
         
         if not api_key or not api_key.strip():
@@ -489,6 +499,11 @@ class OAIWanwurongtu:
                     "placeholder": "请输入您的API密钥"
                 }),
                 "image": ("IMAGE",),
+                "seed": ("INT", {
+                    "default": 0,
+                    "min": 0,
+                    "max": 0xffffffffffffffff
+                }),
             }
         }
     
@@ -497,7 +512,7 @@ class OAIWanwurongtu:
     FUNCTION = "process_image"
     CATEGORY = "OAI"
     
-    def process_image(self, api_key, image):
+    def process_image(self, api_key, image, seed):
         """处理图像"""
         
         if not api_key or not api_key.strip():
@@ -8016,6 +8031,11 @@ class OAIDoubao40:
                 "aspect_ratio": (["1:1", "16:9", "9:16", "4:3", "3:4"], {
                     "default": "9:16"
                 }),
+                "seed": ("INT", {
+                    "default": 0,
+                    "min": 0,
+                    "max": 0xffffffffffffffff
+                }),
             },
             "optional": {
                 "image1": ("IMAGE",),
@@ -8030,7 +8050,7 @@ class OAIDoubao40:
     FUNCTION = "process_image"
     CATEGORY = "OAI"
     
-    def process_image(self, api_key, prompt, model, aspect_ratio, image1=None, image2=None, image3=None, image4=None):
+    def process_image(self, api_key, prompt, model, aspect_ratio, seed, image1=None, image2=None, image3=None, image4=None):
         """处理图像"""
         
         if not api_key or not api_key.strip():
@@ -8479,6 +8499,11 @@ class OAIWanTextToImage:
                     "max": 4,
                     "step": 1
                 }),
+                "seed": ("INT", {
+                    "default": 0,
+                    "min": 0,
+                    "max": 0xffffffffffffffff
+                }),
             }
         }
     
@@ -8487,14 +8512,26 @@ class OAIWanTextToImage:
     FUNCTION = "generate_image"
     CATEGORY = "OAI"
     
-    def generate_image(self, api_key, prompt, aspect_ratio, batch_size):
+    def generate_image(self, api_key, prompt, aspect_ratio, batch_size, seed):
         """生成图像"""
         
+        print(f"[OAI Wan2.2] ========== 节点开始执行 ==========")
+        print(f"[OAI Wan2.2] 接收到的参数:")
+        print(f"[OAI Wan2.2]   - api_key: {'已提供' if api_key and api_key.strip() else '未提供或为空'}")
+        print(f"[OAI Wan2.2]   - prompt: '{prompt}'")
+        print(f"[OAI Wan2.2]   - aspect_ratio: {aspect_ratio}")
+        print(f"[OAI Wan2.2]   - batch_size: {batch_size}")
+        print(f"[OAI Wan2.2]   - seed: {seed}")
+        
         if not api_key or not api_key.strip():
-            raise ValueError("API密钥不能为空，请填写您的API密钥")
+            error_msg = "API密钥不能为空，请填写您的API密钥"
+            print(f"[OAI Wan2.2] 错误: {error_msg}")
+            raise ValueError(error_msg)
         
         if not prompt or not prompt.strip():
-            raise ValueError("提示词不能为空，请输入提示词")
+            error_msg = "提示词不能为空，请输入提示词"
+            print(f"[OAI Wan2.2] 错误: {error_msg}")
+            raise ValueError(error_msg)
         
         # 提交任务
         print(f"[OAI Wan2.2] 开始提交任务...")
