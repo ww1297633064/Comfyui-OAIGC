@@ -125,7 +125,7 @@ class OAIQwenTextToImage:
                     "multiline": True,
                     "placeholder": "请输入提示词"
                 }),
-                "aspect_ratio": (["1:1", "16:9", "9:16", "4:3", "3:4"], {
+                "aspect_ratio": (["1:1", "16:9", "9:16", "2:3", "3:2"], {
                     "default": "9:16"
                 }),
                 "batch_size": ("INT", {
@@ -323,7 +323,7 @@ class OAIJimengTextToImage:
                     "multiline": True,
                     "placeholder": "请输入提示词"
                 }),
-                "aspect_ratio": (["1:1", "16:9", "9:16", "4:3", "3:4"], {
+                "aspect_ratio": (["1:1", "16:9", "9:16", "2:3", "3:2"], {
                     "default": "9:16"
                 }),
                 "use_pre_llm": ("BOOLEAN", {
@@ -701,7 +701,7 @@ class OAIZhengJianZhao:
                     "multiline": False,
                     "placeholder": "请输入背景颜色（如：白色、蓝色、红色）"
                 }),
-                "aspect_ratio": (["1:1", "16:9", "9:16", "4:3", "3:4"], {
+                "aspect_ratio": (["1:1", "16:9", "9:16", "2:3", "3:2"], {
                     "default": "9:16"
                 }),
             }
@@ -1134,7 +1134,7 @@ class OAIZitaiqianyi:
                     "max": 4,
                     "step": 1
                 }),
-                "aspect_ratio": (["1:1", "16:9", "9:16", "4:3", "3:4"], {
+                "aspect_ratio": (["1:1", "16:9", "9:16", "2:3", "3:2"], {
                     "default": "9:16"
                 }),
             }
@@ -1572,7 +1572,7 @@ class OAIQwenEdit:
                     "max": 4,
                     "step": 1
                 }),
-                "aspect_ratio": (["1:1", "16:9", "9:16", "4:3", "3:4"], {
+                "aspect_ratio": (["1:1", "16:9", "9:16", "2:3", "3:2"], {
                     "default": "9:16"
                 }),
             },
@@ -3029,7 +3029,7 @@ class OAIDianshang:
                     "max": 10,
                     "step": 1
                 }),
-                "aspect_ratio": (["9:16", "16:9", "1:1", "3:4", "4:3"], {
+                "aspect_ratio": (["1:1", "16:9", "9:16", "2:3", "3:2"], {
                     "default": "9:16"
                 }),
             }
@@ -3255,7 +3255,7 @@ class OAIFlux:
                     "multiline": True,
                     "placeholder": "请输入提示词"
                 }),
-                "aspect_ratio": (["9:16", "16:9", "1:1", "3:4", "4:3"], {
+                "aspect_ratio": (["1:1", "16:9", "9:16", "2:3", "3:2"], {
                     "default": "9:16"
                 }),
                 "max": ("BOOLEAN", {
@@ -3508,7 +3508,7 @@ class OAIKeling:
                     "max": 1.0,
                     "step": 0.1
                 }),
-                "aspect_ratio": (["9:16", "16:9", "1:1", "3:4", "4:3"], {
+                "aspect_ratio": (["1:1", "16:9", "9:16", "2:3", "3:2"], {
                     "default": "9:16"
                 }),
                 "batch_size": ("INT", {
@@ -8028,7 +8028,7 @@ class OAIDoubao40:
                 "model": (["img2imgs", "text2imgs"], {
                     "default": "img2imgs"
                 }),
-                "aspect_ratio": (["1:1", "16:9", "9:16", "4:3", "3:4"], {
+                "aspect_ratio": (["1:1", "16:9", "9:16", "2:3", "3:2"], {
                     "default": "9:16"
                 }),
                 "seed": ("INT", {
@@ -8259,7 +8259,7 @@ class OAIWanwuhuanbeijing:
                     "multiline": True,
                     "placeholder": "请输入背景描述"
                 }),
-                "aspect_ratio": (["1:1", "16:9", "9:16", "4:3", "3:4"], {
+                "aspect_ratio": (["1:1", "16:9", "9:16", "2:3", "3:2"], {
                     "default": "9:16"
                 }),
             }
@@ -8490,7 +8490,7 @@ class OAIWanTextToImage:
                     "multiline": True,
                     "placeholder": "请输入提示词"
                 }),
-                "aspect_ratio": (["1:1", "16:9", "9:16", "4:3", "3:4"], {
+                "aspect_ratio": (["1:1", "16:9", "9:16", "2:3", "3:2"], {
                     "default": "9:16"
                 }),
                 "batch_size": ("INT", {
