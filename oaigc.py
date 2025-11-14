@@ -7004,8 +7004,8 @@ class OAIShouweizhen:
                     "multiline": True,
                     "placeholder": "请输入描述词"
                 }),
-                "duration": (["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"], {
-                    "default": "1"
+                "duration": (["1秒", "2秒", "3秒", "4秒", "5秒", "6秒", "7秒", "8秒", "9秒", "10秒"], {
+                    "default": "1秒"
                 }),
                 "definition": (["标清", "高清"], {
                     "default": "高清"
@@ -7119,13 +7119,16 @@ class OAIShouweizhen:
         # 将中文清晰度转换为数字
         definition_value = "1" if definition == "标清" else "2"
         
+        # 将中文时长转换为数字（去掉"秒"字）
+        duration_value = duration.replace("秒", "")
+        
         payload = {
             "appId": "shouweizhen",
             "parameter": {
                 "image1": image1_url,
                 "image2": image2_url,
                 "prompt": prompt,
-                "duration": duration,
+                "duration": duration_value,
                 "definition": definition_value
             }
         }
@@ -7199,8 +7202,8 @@ class OAITushengshipin:
                     "multiline": True,
                     "placeholder": "请输入描述词"
                 }),
-                "duration": (["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"], {
-                    "default": "1"
+                "duration": (["1秒", "2秒", "3秒", "4秒", "5秒", "6秒", "7秒", "8秒", "9秒", "10秒"], {
+                    "default": "1秒"
                 }),
                 "motion_amplitude": ("FLOAT", {
                     "default": 1.0,
@@ -7318,12 +7321,15 @@ class OAITushengshipin:
         # 将动作速度转换为字符串
         motion_amplitude_str = str(motion_amplitude)
         
+        # 将中文时长转换为数字（去掉"秒"字）
+        duration_value = duration.replace("秒", "")
+        
         payload = {
             "appId": "tushengshipin",
             "parameter": {
                 "image": image_url,
                 "prompt": prompt,
-                "duration": duration,
+                "duration": duration_value,
                 "motion_amplitude": motion_amplitude_str,
                 "definition": definition_value
             }
@@ -8893,8 +8899,8 @@ class OAIDuotushipin:
                     "multiline": True,
                     "placeholder": "请输入提示词"
                 }),
-                "duration": (["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"], {
-                    "default": "1"
+                "duration": (["1秒", "2秒", "3秒", "4秒", "5秒", "6秒", "7秒", "8秒", "9秒", "10秒"], {
+                    "default": "1秒"
                 }),
                 "definition": (["标清", "高清"], {
                     "default": "高清"
@@ -9025,6 +9031,9 @@ class OAIDuotushipin:
         # 将中文清晰度转换为数字
         definition_value = "1" if definition == "标清" else "2"
         
+        # 将中文时长转换为数字（去掉"秒"字）
+        duration_value = duration.replace("秒", "")
+        
         payload = {
             "appId": "duotushipin",
             "parameter": {
@@ -9032,7 +9041,7 @@ class OAIDuotushipin:
                 "image2": image2_url,
                 "image3": image3_url,
                 "prompt": prompt,
-                "duration": duration,
+                "duration": duration_value,
                 "definition": definition_value
             }
         }
